@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main2.css">
+    <link rel="stylesheet" href="edit.css">
+</head>
+<div class="header">
+    <p>Ishmael's final assignment</p>
+  </div>
+<!--lines 15 through 46 is my data table/graph created by my table id-->
+<body>
+    <table id = "Columnsandrows" border = "5" width = "100%">
+        <thead>
+            <th>Name</th>
+            <th>Date Listed</th>
+            <th>Occupation</th>
+            <tbody>
+                <tr id = "tbody">
+                   <td>Ishmael Sutton</td>
+                   <td>10/02/2023</td>
+                   <td>Studies at UAT</td>
+                   <td>♡</td>
+                </tbody>
+                <tbody>
+                       <td>Ishmael Sutton</td>
+                       <td>10/02/2023</td>
+                       <td>Studies at UAT</td>
+                       <td>♡</td>
+                    </tbody>
+                    <tbody>
+                    <td>Ishmael Sutton</td>
+                    <td>10/02/2023</td>
+                    <td>Studies at UAT</td>
+                    <td>♡</td>
+                    <tbody>
+                            <td>Ishmael Sutton</td>
+                            <td>10/02/2023</td>
+                            <td>Studies at UAT</td>
+                            <td>♡</td>
+                         </tbody>
+                     </tbody>
+       </tr>
+    </table>
+    <center>
+    <script type = "text/javascript">
+
+           var imgObj = null;
+           var animate ;
+           
+           function init() {
+              imgObj = document.getElementById('myImage');
+              imgObj.style.position= 'relative'; 
+              imgObj.style.left = '0px'; 
+           }
+           
+           function moveRight() {
+              imgObj.style.left = parseInt(imgObj.style.left) + 10 + 'px';
+              animate = setTimeout(moveRight,30);  
+           }
+           
+           function stop() {
+              clearTimeout(animate);
+              imgObj.style.left = '0px'; 
+           }
+           
+           window.onload = init;
+     </script>
+  </head>
+  
+  <body>
+  
+     <form>
+        <img id = "myImage" src = "finalassign.jpg" />
+        <input type = "button" value = "Push" onclick = "moveRight();" />
+        <input type = "button" value = "Stop" onclick = "stop();" />
+     </form>
+     <audio controls> 
+        <source src = "Migos-stir-fry-instrumentalfx.mp3" type = audio/mpeg>
+     </audio>
+    <body>
+            <a href = "boards.html"> Boards Assignment </a>
+            <a href= "index.html"> First Webpage </a>
+        </nav>
+    </body>
+</center>
+    </style>
+
+    <div class="footer">
+      <p>        Ishmael Sutton <br>
+        University Of Advancing Technology <br>
+        2625 W Baseline Rd, Tempe, AZ 85283</p>
+    </div>
+</body>
+</html>
